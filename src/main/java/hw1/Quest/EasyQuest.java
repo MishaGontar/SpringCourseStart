@@ -1,4 +1,4 @@
-package Quest;
+package hw1.Quest;
 
 import lombok.*;
 

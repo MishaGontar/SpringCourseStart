@@ -1,6 +1,6 @@
-package Heroes;
+package hw1.Heroes;
 
-import Quest.Quest;
+import hw1.Quest.Quest;
 import lombok.*;
 
 @Setter
