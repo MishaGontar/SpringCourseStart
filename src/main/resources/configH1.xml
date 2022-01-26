@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-<bean id="easyQ" class="hw1.Quest.EasyQuest" scope="prototype">
-    <constructor-arg name="name" value="Task 1"/>
-    <constructor-arg name="exp" value="150"/>
-</bean>
-<bean id="hardQ" class="hw1.Quest.HardQuest" scope="prototype">
-    <constructor-arg name="name" value="Hard Task"/>
-    <constructor-arg name="exp" value="1000"/>
-    <constructor-arg name="coins" value="500"/>
-</bean>
-    <bean id="knight" class="hw1.Heroes.Knight" >
-        <constructor-arg value="First Heroes"/>
-        <property name="quest" ref="hardQ"/>
+    <bean id="easyQ" class="hw1.Quest.EasyQuest" scope="prototype">
+        <constructor-arg name="name" value="Task 1" />
+        <constructor-arg name="exp" value="150" />
+    </bean>
+    <bean id="hardQ" class="hw1.Quest.HardQuest" scope="prototype">
+        <constructor-arg name="name" value="Hard Task" />
+        <constructor-arg name="exp" value="1000" />
+        <constructor-arg name="coins" value="500" />
+    </bean>
+    <bean id="knight" class="hw1.Heroes.Knight">
+        <constructor-arg value="First Heroes" />
+        <property name="quest" ref="hardQ" />
     </bean>
 </beans>
